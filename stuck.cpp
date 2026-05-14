@@ -43,4 +43,10 @@ public:
     void peek() {
         if (isEmpty()) {
             cout << "List is empty." << endl;
+            } else {
+            // Perbaikan logika: Peek seharusnya hanya melihat tumpukan teratas,
+            // bukan melakukan looping ke seluruh isi list.
+            cout << "Top value: " << top->data << endl;
+        }
+    }
 };
