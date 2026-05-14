@@ -34,3 +34,8 @@ public:
         } else {
             Node *temp = top;
             int poppedVal = temp->data;
+            top = top->next;
+            delete temp; // Penting: Hapus node lama dari memori
+            cout << "Popped value: " << poppedVal << endl;
+        }
+    }
