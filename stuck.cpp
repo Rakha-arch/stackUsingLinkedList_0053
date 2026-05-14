@@ -31,3 +31,6 @@ public:
     void pop() {
         if (isEmpty()) {
             cout << "Stack is empty." << endl;
+        } else {
+            Node *temp = top;
+            int poppedVal = temp->data;
