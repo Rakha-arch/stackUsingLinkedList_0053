@@ -49,4 +49,10 @@ public:
             cout << "Top value: " << top->data << endl;
         }
     }
+
+    bool isEmpty() {
+        return top == NULL;
+    }
+
+
 };
