@@ -33,9 +33,14 @@ public:
             cout << "Stack is empty." << endl;
         } else {
             Node *temp = top;
-            int poppedVal = temp->data;
+            int poppedVal = temp->data; // Ambil datanya sebelum dihapus
             top = top->next;
             delete temp; // Penting: Hapus node lama dari memori
             cout << "Popped value: " << poppedVal << endl;
         }
     }
+
+    void peek() {
+        if (isEmpty()) {
+            cout << "List is empty." << endl;
+};
